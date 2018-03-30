@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugin.GetActualFilePath"
+    version="0.0.1">
+    <name>GetActualFilePath</name>
+    <description>Cordova GetActualFilePath Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, GetActualFilePath</keywords>
+    <js-module src="www/GetActualFilePath.js" name="GetActualFilePath">
+        <clobbers target="window.GetActualFilePath" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="GetActualFilePathPlugin">
+                <param name="android-package" value="com.phonegap.plugin.GetActualFilePath.GetActualFilePathPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/GetActualFilePathPlugin.java" target-dir="src/com/phonegap/GetActualFilePath/" />
+    </platform>
+</plugin>
+
