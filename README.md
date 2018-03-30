@@ -15,7 +15,7 @@ window.GetActualFilePath.GetActualFilePath(fileEntry.nativeURL, function (filePa
 
 ## Installation for Cordova >= 3.0.0
 
-phonegap local plugin add https://github.com/AhmadAyyaz1993/Get-Absolute-File-Path-From-URI-Phonegap.git
+phonegap local plugin add https://github.com/AhmadAyyaz1993/Get-Absolute-File-Path-From-URI-Plugin-Phonegap.git
 
 
 
